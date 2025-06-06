@@ -5,7 +5,6 @@ import { useTransition } from "react";
 
 export default function LogoutButton() {
   const [isPending, startTransition] = useTransition();
-
   const handleLogout = () => {
     startTransition(async () => {
       await logoutSession();
